@@ -41,7 +41,6 @@ export default function App() {
           <div className="container lp-hero__inner">
             <div className="lp-hero__brand">
               <img className="lp-hero__logo" src={HERO.logo} alt={t("p.title")} width="1000" height="648" fetchpriority="high" />
-              <span className="lp-hero__x" aria-hidden="true" />
               <a className="lp-hero__fra" href={CONTACT.site} target="_blank" rel="noopener noreferrer" aria-label="Fastline Racing Academy">
                 <img src={HERO.fra} alt="Fastline Racing Academy" width="2001" height="1082" />
               </a>
@@ -57,7 +56,6 @@ export default function App() {
               <a href="#lp-o" className="btn lp-btn--ghost">{t("ui.more")}</a>
             </div>
           </div>
-          <div className="lp-hero__icicles">{Array.from({ length: 26 }, (_, i) => <i key={i} style={{ ["--i"]: i }} />)}</div>
         </section>
 
         {/* ---------------- INTRO ---------------- */}

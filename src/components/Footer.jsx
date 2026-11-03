@@ -15,9 +15,10 @@ export default function Footer() {
         </div>
         <div className="rft__col">
           <span className="rft__h">{t("ft.contact")}</span>
+          <span className="rft__name">{CONTACT.name}</span>
+          <span className="rft__role">{t("ft.role")} · {CONTACT.company}</span>
+          <a href={CONTACT.phoneHref}>tel {CONTACT.phone}</a>
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-          <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
-          <a href={CONTACT.site} target="_blank" rel="noopener noreferrer">{t("ft.site")} ↗</a>
         </div>
         <div className="rft__col">
           <span className="rft__h">{t("ft.follow")}</span>

@@ -1,25 +1,16 @@
 /* ============ RUKA landing — additions on top of the Laponia page styles ============ */
 
-/* ---------- hero: Laponia wordmark + small FRA logo ---------- */
+/* ---------- hero: Laponia wordmark with a small FRA logo under it ---------- */
 .lp-hero { padding-top: 64px; }
-.lp-hero__brand { display: flex; align-items: center; gap: clamp(14px, 2vw, 30px); margin-bottom: 14px; }
+.lp-hero__brand { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
 .lp-hero__brand .lp-hero__logo { margin-bottom: 0; }
-.lp-hero__x {
-  align-self: stretch; width: 1px; margin-block: 8%;
-  background: linear-gradient(180deg, transparent, rgba(255,255,255,.55), transparent);
-  animation: lpLogoIn 1s .25s cubic-bezier(.16,.8,.3,1) both;
-}
-.lp-hero__fra { display: block; flex: 0 0 auto; animation: lpLogoIn 1s .4s cubic-bezier(.16,.8,.3,1) both; }
+.lp-hero__fra { display: block; animation: lpLogoIn 1s .4s cubic-bezier(.16,.8,.3,1) both; }
 .lp-hero__fra img {
-  width: clamp(92px, 11vw, 170px); height: auto;
-  filter: drop-shadow(0 10px 28px rgba(4,22,31,.6));
+  width: clamp(64px, 5.5vw, 84px); height: auto;
+  filter: drop-shadow(0 6px 18px rgba(4,22,31,.6));
   transition: transform .3s cubic-bezier(.16,.8,.3,1);
 }
-.lp-hero__fra:hover img { transform: translateY(-2px) scale(1.03); }
-@media (max-width: 560px) {
-  .lp-hero__brand .lp-hero__logo { width: 60vw; }
-  .lp-hero__fra img { width: 22vw; }
-}
+.lp-hero__fra:hover img { transform: translateY(-2px) scale(1.04); }
 
 /* ---------- Ruka film (in place of the packages) ---------- */
 .rv { position: relative; overflow: hidden; }
@@ -115,6 +106,8 @@
 .rft__col { display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; }
 .rft__col a { color: #fff; transition: color .2s; width: fit-content; }
 .rft__col a:hover { color: var(--ice); }
+.rft__name { font: 800 16px/1.2 var(--font-display); color: #fff; }
+.rft__role { font-size: 13px; color: rgba(255,255,255,.6); margin-top: -6px; margin-bottom: 4px; }
 .rft__h { font: 800 11px/1 var(--font-display); letter-spacing: .22em; color: var(--ice); margin-bottom: 6px; }
 .rft__soc { display: flex; gap: 10px; }
 .rft__soc a { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid rgba(94,200,240,.35); }

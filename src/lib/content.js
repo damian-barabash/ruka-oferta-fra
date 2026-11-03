@@ -12,9 +12,11 @@ export const SEASON = {
 };
 
 export const CONTACT = {
-  email: "racingacademy@fastline.pl",
-  phone: "+48 603 102 665",
-  phoneHref: "tel:+48603102665",
+  name: "Renne Kuusisto",
+  company: "Rukakeskus Oy / Pyhätunturi Oy",
+  email: "renne.kuusisto@ruka.fi",
+  phone: "+358 50 4718631",
+  phoneHref: "tel:+358504718631",
   site: "https://fastlineracingacademy.pl/",
   facebook: "https://www.facebook.com/fastlineracingacademy/",
   instagram: "https://www.instagram.com/fastline_racing_academy/",
@@ -105,6 +107,7 @@ export const TEXT = {
 
     "ft.about": "Racing and rally driving school led by nine-time Polish champion Mariusz Miękoś. Track training in Poland, Ice Driving in Lapland, trips and corporate events.",
     "ft.contact": "CONTACT",
+    "ft.role": "Sales Negotiator",
     "ft.follow": "FOLLOW US",
     "ft.site": "fastlineracingacademy.pl",
     "ft.rights": "Fastline Events Sp. z o.o. All rights reserved.",
@@ -163,6 +166,7 @@ export const TEXT = {
 
     "ft.about": "Kilpa- ja ralliajokoulu, jota johtaa yhdeksänkertainen Puolan mestari Mariusz Miękoś. Rataharjoittelua Puolassa, Ice Driving Lapissa, matkoja ja yritystapahtumia.",
     "ft.contact": "YHTEYSTIEDOT",
+    "ft.role": "Myyntineuvottelija",
     "ft.follow": "SEURAA MEITÄ",
     "ft.site": "fastlineracingacademy.pl",
     "ft.rights": "Fastline Events Sp. z o.o. Kaikki oikeudet pidätetään.",
